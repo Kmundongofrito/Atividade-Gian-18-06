@@ -62,13 +62,13 @@ fun main() {
     println("Produto: ${produto2.nome} | Preço: R$ ${"%.2f".format(produto2.getPreco())} | Estoque: ${produto2.estoque}")
     println("Produto: ${produto3.nome} | Preço: R$ ${"%.2f".format(produto3.getPreco())} | Estoque: ${produto3.estoque}")
 
-    println("\n--- TESTANDO DESCONTOS E ERROS ---")
+    println("\n    TESTANDO DESCONTOS E ERROS    ")
     produto1.aplicarDesconto(10.0)
     produto2.aplicarDesconto(-5.0)
 
     produto3.setPreco(-10.0)
 
-    println("\n--- TESTANDO PRODUTO PERECÍVEL ---")
+    println("\n    TESTANDO PRODUTO PERECÍVEL    ")
     val produto4 = ProdutoPerecivel("Leite", 5.00, 20, "2024/05/10")
     val dataAtual = "2024/10/25"
 
